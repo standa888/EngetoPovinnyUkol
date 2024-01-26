@@ -1,0 +1,32 @@
+
+.about-us-conteiner {
+    display: flex;
+    gap: 40px;
+}
+
+.about-us-content {
+    width: 50%;
+}
+.about-us-content h2 {
+    font-family: "Roboto";
+    margin-bottom: 30px;
+    font-size: 2.3em;
+}
+
+.image-conteiner {
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .image-conteiner {
+        width: 100%;
+    }
+    .about-us-content {
+        width: 100%;
+    }
+}
+.image-conteiner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}

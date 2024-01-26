@@ -1,0 +1,224 @@
+
+@import url(styles/about-us.css);
+@import url(styles/what-we-do.css);
+@import url(styles/our-trips.css);
+@import url(styles/where-to-go.css);
+@import url(styles/reviewes.css);
+@import url(styles/gallery.css);
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+    --navigation: #33292a;
+    
+    /* Background colors */
+
+    --background-color1: #33292a;
+    --background-color2: #644b4f;
+    --background-color3: #333333;
+    --background-color4: #f2f2f2;
+
+    /* Background colors */
+    
+    --link-color: #efa69d;
+    --link-hover: #e9877b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--background-color4);
+}
+.navigation-conteiner {
+    height: 80px;
+    background-color: var(--navigation);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .navigation-conteiner {
+        display: none;
+    }
+}
+
+.navigation-conteiner nav {
+    width: 60%;
+}
+@media (max-width: 1200px) {
+    .navigation-conteiner nav {
+        width: 80%;
+    }
+}
+
+.navigation-conteiner ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navigation-conteiner nav li button {
+    color: #fff;
+    list-style: none;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.1em;
+
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.page {
+    position: relative;
+    width: 60%;
+}
+@media (max-width: 768px) {
+    .page div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page {
+        width: 90%;
+    }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+}
+@media (max-width: 768px) {
+    section {
+        text-align: center;
+    }
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.hero-section .page h1 {
+    position: absolute;
+    bottom: 50px;
+    font-family: "Roboto";
+    font-size: 8em;
+    color: #fff;
+    text-align: right;
+    right: 0;
+}
+@media (max-width: 768px) {
+    .hero-section .page h1 {
+        font-size: 15vw;
+    }
+}
+
+
+footer {
+    position: relative;
+    background-color: var(--background-color3);
+    height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+footer a {
+    font-family: "Roboto";
+    font-size: 0.7em;
+    color: var(--link-color);
+}
+
+footer a:hover {
+    color: var(--link-hover);
+}
+
+footer p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+            height: 80px;
+            background-color: var(--navigation);
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+    .mobile-menu-button {
+        outline: none;
+        border: none;
+        height: 40px;
+        width: 40px;
+        background: none;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .mobile-menu-button img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.mobile-navigation-conteiner {
+    position: fixed;
+    z-index: 1;
+    padding: 25px 0;
+    margin-top: 80px;
+    visibility: hidden;
+    width: 100%;
+    background-color: var(--background-color1);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.mobile-navigation-conteiner nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+}
+
+
+.mobile-navigation-conteiner nav li button {
+    color: #fff;
+    list-style: none;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.3em;
+
+    outline: none;
+    border: none;
+    background: transparent;
+}

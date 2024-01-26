@@ -1,0 +1,40 @@
+
+.what-we-do-section {
+    background-color: var(--background-color1);
+}
+
+.what-we-do-content {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.what-we-do-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.what-we-do-images {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.what-we-do-images div {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .what-we-do-images div {
+        margin-top: 35px;
+    }
+}
+
+.what-we-do-images img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 12px;
+}
+
+.what-we-do-images p {
+    font-weight: 500;
+}
